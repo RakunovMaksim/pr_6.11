@@ -48,6 +48,7 @@ img {
 
 body {
 	font-family: 'Muller', sans-serif;
+  background: #F1F1F1;
 }
 .list-reset{
   margin: 0;
@@ -104,12 +105,26 @@ body {
 .logo {
   margin-right: 40px;
 }
+.btn-personal-account {
+  font-weight: 500;
+  font-size: 16px;
+  color: #CC9933;
+  background-image: url(../img/btn-personal-account-arrow.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 29px;
+}
 .nav-container {
   padding: 0 45px;
   height: 70px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
 }
 .nav-list-item {
   margin-right: 45px;
+  color: #666666;
+
 }
 .nav-list {
   margin-right: auto;
@@ -117,10 +132,13 @@ body {
 .header-btn:not(:last-child) {
   margin-right: 40px;
 }
-.header-btn {
-  outline: 1px solid #000;
-  width: fit-content;
-  height: 42px;
+.btn {
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #CC9933;
+  font-weight: 400;
+  font-size: 16px;
+  color: #CC9933;
 }
 /* special-offers */
 .special-offers-list {
@@ -130,33 +148,72 @@ body {
   gap: 24px;
 }
 .special-offers-list-item {
+    display: flex;
+  flex-direction: column;
   width: 570px;
   height: 258px;
-  padding: 45px 100px 40px 45px;
-  outline: 1px solid #000;
+  padding: 40px 108px 40px 45px;
+  border-radius: 15px;
 }
 .special-offers-list-item-big {
+  padding: 212px 45px 40px 45px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   height: 540px;
+  color: #fff;
 }
-.special-offers-list-item-title-small {
+.special-offers-list-item-title {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-weight: 900;
   font-size: 40px;
+  color: #fff;
 }
 .special-offers-price {
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
+  color: #fff;
 }
-.special-offers-list-item-title-big {
+.price-big {
+  font-size: 30px;
+}
+.title-big {
   margin: 0;
-  padding: 0;
-  font-weight: 900;
   font-size: 60px;
+}
+.special-offers-img1 {
+  background-image:
+  linear-gradient(to right, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)),
+  url(../img/special-offers-img1.jpg);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+.special-offers-img2 {
+  background-image:
+    linear-gradient(to right, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0)),
+  url(../img/special-offers-img2.jpg);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+.special-offers-img3 {
+  background-image: url(../img/special-offers-img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.special-offers-link {
+  margin-top:auto;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 16px;
+  color: #CC9933;
+  background-image: url(../img/link-arrow-more.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 16px;
 }
 /* about-us */
 .about-us {
@@ -165,7 +222,8 @@ body {
   line-height: 200%;
 }
 .about-us-text {
-  margin: 0;
+  max-width: 888px;
+    margin: 0;
 }
 /* services */
 .services-list {
@@ -178,17 +236,24 @@ body {
   flex-direction:row;
   width: 573px;
   height: 330px;
-  outline: 1px solid #000;
+  border-radius: 15px;
+  background-color: #fff;
 }
 .services-list-item-about {
   margin: 0;
-  padding: 26px 126px 35px 40px;
+  padding: 26px 126px 35px 45px;
 }
 .services-list-item-title {
   margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 200%;
+  width: fit-content;
+  color: #CC9933;
+  background-image: url(../img/link-arrow-more.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 16px;
 }
 .services-list-item-description {
   margin: 0;
@@ -206,7 +271,7 @@ body {
   width: 276px;
   height: 276px;
   border-radius: 15px;
-  outline: 1px solid #000;
+  background-color: #fff;
 }
 .advantages-list-item-desc {
   margin: 0;
@@ -227,7 +292,8 @@ body {
   position: relative;
   width: 374px;
   height: 440px;
-  outline: 1px solid #000;
+  border-radius: 15px;
+  background-color: #fff;
 }
 .accommdation-list-item-desckr {
   display: flex;
@@ -242,10 +308,27 @@ body {
 .accommodation-list-item-title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.prefix {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+}
+.price{
+  font-weight: 900;
+  font-size: 20px;
+}
+.postfix{
+  font-weight: 500;
+  font-size: 16px;
 }
 .accommodation-list-item-geolocation {
   margin: 0;
   margin-bottom: 20px;
+  color: #999999;
+
 }
 .star-container {
   position: absolute;
@@ -256,7 +339,7 @@ body {
   padding: 0;
   width: 100px;
   height: 42px;
-  border: 1px solid #000;
+
 }
 .more-hotel {
   position: relative;
@@ -266,7 +349,12 @@ body {
   left: 54px;
   bottom: 27px;
   z-index: 1;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 200%;
+  color: #fff;
+  background-image: url(../img/link-arrow-more-white.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 16px;
 }
