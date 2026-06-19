@@ -33,7 +33,7 @@
             <a href="#">Блог</a>
           </li>
           <li class="nav-list-item">
-            <a href="#">Контакты</a>
+            <a href="contacts">Контакты</a>
           </li>
         </ul>
         <button class="btn-reset header-btn btn">Хочу тур</button>
@@ -303,6 +303,141 @@
           </li>
         </ul>
     </section>
+    <section class="container">
+      <div class="want-tour">
+        <h2 class="section-title">Хочу тур</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form flex">
+            <ul class="list-reset form-list flex">
+              <li class="form-list-item form-list-item-font">
+                <p class="form-list-item-title ">
+                  Город вылета
+                </p>
+                <select name="city-departure" class="form-select-size form-borders">
+                  <option value="Санкт-петербург">Санкт-петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Казань">Казань</option>
+                </select>
+              </li>
+              <li class="form-list-item form-list-item-font">
+                <p class="form-list-item-title">
+                  Страна
+                </p>
+                <select name="country from-select-size" class="form-select-size form-borders">
+                  <option value="Австралия">Австралия</option>
+                  <option value="Бразилия">Бразилия</option>
+                  <option value="Португалия">Португалия</option>
+                </select>
+              </li>
+              <li class="form-list-item form-list-item-font form-num-date-size">
+                <p class="form-list-item-title">
+                  Дата прибытия
+                </p>
+                <input type="date" class="input-arrival-date form-num-date-size form-borders">
+              </li>
+              <li class="form-list-item form-list-item-font" >
+                <p class="form-list-item-title">
+                  Ночей
+                </p>
+                <input type="number" class="input-night form-num-date-size form-borders form-borders-bottom" min="1" max="30" value="1">
+              </li>
+              <li class="form-list-item form-list-item-font form-num-date-size">
+                <p class="form-list-item-title" >
+                  Туристы
+                </p>
+                <input type="number" class="input-tourists form-num-date-size form-borders form-borders-bottom" min="1" max="10" value="1" required>
+              </li>
+            </ul>
+            <button class="btn-reset btn">Найти</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="contacts" class="container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts flex">
+        <div class="contacts-left">
+          <ul class="list-reset contacts-list flex">
+            <li class="contacts-list-item flex">
+              <div class="contacts-list-item-left">
+                  <strong class="contacts-list-item-left-title">Адрес</strong>
+              </div>
+              <div class="contacts-list-item-right">
+                  <p class="contacts-item-info">Москва, улица Юности,<br>дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+              </div>
+            </li>
+            <li class="contacts-list-item flex">
+              <div class="contacts-list-item-left">
+                <strong class="contacts-list-item-left-title">Телефоны</strong>
+              </div>
+              <div class="contacts-list-item-right">
+                <a href="tel:+74995356434" class="link">+7 499 535-64-34</a>
+                <a href="tel:+74950050544" class="link">+7 495 005-05-44</a>
+              </div>
+            </li>
+            <li class="contacts-list-item flex">
+              <div class="contacts-list-item-left">
+                  <strong class="contacts-list-item-left-title">Email</strong>
+              </div>
+              <div class="contacts-list-item-right">
+                <a href="mailto:lg.oona@mail.ru" class="link">lg.oona@mail.ru</a>
+                <p class="contacts-list-item-right-descr">по вопросам бронирования</p>
+                <a href="mailto:hotels.ln@mail.ru" class="link">hotels.ln@mail.ru</a>
+                <p class="contacts-list-item-right-descr">по вопросам сотрудничества</p>
+              </div>
+            </li>
+            <li class="contacts-list-item flex">
+              <div class="contacts-list-item-left">
+                  <strong class="contacts-list-item-left-title">График</strong>
+              </div>
+              <div class="contacts-list-item-right">
+                <p class="contacts-item-info">Понедельник-пятница,<br> с&nbsp;10:00 до&nbsp;19:00</p>
+              </div>
+            </li>
+            <li class="contacts-list-item flex">
+              <button class="btn-reset btn btn-contacts">
+                Построить маршрут
+              </button>
+            </li>
+          </ul>
+        </div>
+      <div class="contacts-right">
+      </div>
+    </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="container footer-container flex">
+      <div class="left-footer-block flex">
+          <p class="footer-descr footer-name">
+            &copy;2012&mdash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+          </p>
+          <p class="footer-descr footer-dop-info">
+            Представленная на&nbsp;сайте информация носит справочный характер<br>и&nbsp;не&nbsp;является публичной офертой
+          </p>
+          <a href="#" class="link">Пользовательское соглашение</a>
+      </div>
+      <div class="right-footer-block flex">
+          <p class="footer-descr footer-address-link">
+            11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+          </p>
+          <a href="tel:+74995356434" class="link">+7 499 535-64-34</a>
+          <a href="tel:+74950050544" class="link footer-address-link">+7 495 005-05-44</a>
+          <a href="mailto:lg.oona@mail.ru" class="link">lg.oona@mail.ru</a>
+          <a href="mailto:hotels.ln@mail.ru" class="link">hotels.ln@mail.ru</a>
+        </div>
+      <div class="footer-link-icons flex">
+        <a href="#" class="footer-icons">
+          <img class="footer-icon" src="img/footer-icon-owl.svg" alt="Мы в Tripadvisor">
+        </a>
+        <a href="#" class="footer-icons">
+          <img class="footer-icon" src="img/footer-icon-ok.svg" alt="Мы в Одноклассниках">
+        </a>
+        <a href="#" class="footer-icon-link">
+          <img class="footer-icon" src="img/footer-icon-vk.svg" alt="Мы во Вконтакте">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
