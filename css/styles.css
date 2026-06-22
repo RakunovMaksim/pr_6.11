@@ -73,7 +73,7 @@ body {
 .section-title {
   margin: 0;
   margin-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   padding: 0;
   font-family: "Muller", sans-serif;
   font-weight: 400;
@@ -90,7 +90,6 @@ body {
 }
 .header {
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 .header-container-centering {
   align-items: center;
@@ -102,6 +101,7 @@ body {
   margin-right: auto;
   font-weight: 700;
   font-size: 20px;
+  color: #666666;
 }
 .logo {
   margin-right: 40px;
@@ -125,7 +125,6 @@ body {
 .nav-list-item {
   margin-right: 45px;
   color: #666666;
-
 }
 .nav-list {
   margin-right: auto;
@@ -149,9 +148,9 @@ body {
   gap: 24px;
 }
 .special-offers-list-item {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  width: 570px;
+  width: 573px;
   height: 258px;
   padding: 40px 108px 40px 45px;
   border-radius: 15px;
@@ -161,15 +160,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 573px;
   height: 540px;
   color: #fff;
 }
 .special-offers-list-item-title {
   margin: 0;
   margin-bottom: 15px;
-  padding: 0;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: #fff;
 }
 .special-offers-price {
@@ -183,7 +184,8 @@ body {
   font-size: 30px;
 }
 .title-big {
-  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
   font-size: 60px;
 }
 .special-offers-img1 {
@@ -224,7 +226,12 @@ body {
 }
 .about-us-text {
   max-width: 888px;
-    margin: 0;
+  max-height: 192px;
+  margin: 0;
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
 }
 /* services */
 .services-list {
@@ -242,7 +249,7 @@ body {
 }
 .services-list-item-about {
   margin: 0;
-  padding: 26px 126px 35px 45px;
+  padding: 19px 126px 35px 45px;
 }
 .services-list-item-title {
   margin: 0;
@@ -261,6 +268,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 200%;
+
 }
 /* advantages */
 .advantages-list {
@@ -300,15 +308,15 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 32px 45px 45px 45px;
+  padding: 30px 45px 45px 45px;
 }
 .accommdation-list-item-price {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .accommodation-list-item-title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 500;
   font-size: 16px;
 }
@@ -327,13 +335,16 @@ body {
 }
 .accommodation-list-item-geolocation {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #999999;
 
 }
 .star-container {
   position: absolute;
-  right: 25px;
+  right: 45px;
+}
+.star:not(:nth-child(5n)){
+  margin-right: 2px;
 }
 .accommodation-btn {
   margin: 0;
@@ -433,7 +444,7 @@ body {
   border-bottom:1px solid #E9E9E9;
 }
 .contacts-list-item-left {
-  width: 40%;
+  width: 38%;
 }
 .contacts-list-item-right {
   width: 60%;
@@ -476,6 +487,9 @@ body {
   width: 653px;
   height: 528px;
 }
+.contacts-container {
+  margin-bottom: 40px;
+}
 /* footer */
 .footer-container {
   position: relative;
@@ -484,11 +498,11 @@ body {
   border-radius: 15px;
   background-color: #333333;
   background-image: url(../img/footer-big-icon.svg);
-  background-position: 82% 100%;
+  background-position: 81% 100%;
   background-repeat: no-repeat;
 }
 .left-footer-block {
-  margin-right: 125px;
+  margin-right: 85px;
   max-width: 341px;
   flex-direction: column;
 }
